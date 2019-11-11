@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class PocketIDEServerRequest: Codeable {
+public class PocketIDEServerRequest: Codable {
     let token: String
     let request: Data
     
