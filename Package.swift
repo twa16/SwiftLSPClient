@@ -9,9 +9,11 @@ let package = Package(
     products: [
         .library(name: "SwiftLSPClient", targets: ["SwiftLSPClient"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.0.0")
+    ],
     targets: [
-        .target(name: "SwiftLSPClient", dependencies: [], path: "SwiftLSPClient/"),
+        .target(name: "SwiftLSPClient", dependencies: ["Starscream"], path: "SwiftLSPClient/"),
         .testTarget(name: "SwiftLSPClientTests", dependencies: ["SwiftLSPClient"], path: "SwiftLSPClientTests/"),
     ]
 )
