@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFD98EBF9994D99AF6C48651 /* WebSocketDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD989AB44663A45778151A3 /* WebSocketDataTransport.swift */; };
 		C90F9BB421773CB800EC3854 /* LanguageServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F9BB321773CB800EC3854 /* LanguageServer.swift */; };
 		C91160E5221106FF00B4F3AB /* WillSaveTextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91160E4221106FF00B4F3AB /* WillSaveTextDocument.swift */; };
 		C91160EE2214F7A700B4F3AB /* TypeDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91160ED2214F7A700B4F3AB /* TypeDefinition.swift */; };
@@ -76,6 +77,7 @@
 		BBEF4C882364516900109F9A /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		BBEF4C892364516900109F9A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BBEF4C8A2364516A00109F9A /* SwiftLSPClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftLSPClient.podspec; sourceTree = "<group>"; };
+		BFD989AB44663A45778151A3 /* WebSocketDataTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketDataTransport.swift; sourceTree = "<group>"; };
 		C90F9BB321773CB800EC3854 /* LanguageServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageServer.swift; sourceTree = "<group>"; };
 		C91160E4221106FF00B4F3AB /* WillSaveTextDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillSaveTextDocument.swift; sourceTree = "<group>"; };
 		C91160ED2214F7A700B4F3AB /* TypeDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDefinition.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				C992999D21755D6900C5F8A5 /* ProtocolTransport.swift */,
 				C992999C21755D6900C5F8A5 /* StdioDataTransport.swift */,
 				C99DBF3921FE1A91005AC5C5 /* JSONValue.swift */,
+				BFD989AB44663A45778151A3 /* WebSocketDataTransport.swift */,
 			);
 			path = JSONRPC;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				C923317B231DF43A000207E7 /* MessageType.swift in Sources */,
 				C9D85CC721EF836C00B33336 /* Position.swift in Sources */,
 				C99299A221755D6900C5F8A5 /* DataTransport.swift in Sources */,
+				BFD98EBF9994D99AF6C48651 /* WebSocketDataTransport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
