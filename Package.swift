@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftLSPClient",
-    platforms: [.macOS("10.10")],
+    platforms: [.macOS("10.10"), .watchOS("6.1"), .iOS("10.0")],
     products: [
         .library(name: "SwiftLSPClient", targets: ["SwiftLSPClient"]),
     ],
