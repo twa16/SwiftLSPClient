@@ -687,7 +687,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwiftLSPClient;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = "";
+				VALID_ARCHS = "armv7s armv7 arm64e arm64";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -723,7 +723,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwiftLSPClient;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = "";
+				VALID_ARCHS = "armv7s armv7 arm64e arm64";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
