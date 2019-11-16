@@ -179,7 +179,7 @@
 		OBJ_90 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_91 /* SwiftLSPClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftLSPClient.podspec; sourceTree = "<group>"; };
 		OBJ_92 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		"Starscream::Starscream::Product" /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Starscream::Starscream::Product" /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftLSPClient::SwiftLSPClient::Product" /* SwiftLSPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftLSPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftLSPClient::SwiftLSPClientTests::Product" /* SwiftLSPClientTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftLSPClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -884,6 +884,7 @@
 					"$(SRCROOT)/.build/checkouts/swift-nio-zlib-support",
 				);
 				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/Starscream_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -894,7 +895,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Starscream;
@@ -914,6 +917,7 @@
 					"$(SRCROOT)/.build/checkouts/swift-nio-zlib-support",
 				);
 				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/Starscream_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -924,7 +928,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Starscream;
