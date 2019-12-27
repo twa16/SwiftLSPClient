@@ -232,6 +232,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB2ABB622381A21E00EE1663 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* JSONRPC */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,7 +313,7 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -322,8 +329,8 @@
 				OBJ_90 /* LICENSE */,
 				OBJ_91 /* SwiftLSPClient.podspec */,
 				OBJ_92 /* README.md */,
+				EB2ABB622381A21E00EE1663 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_55 /* Window */ = {
@@ -523,7 +530,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
