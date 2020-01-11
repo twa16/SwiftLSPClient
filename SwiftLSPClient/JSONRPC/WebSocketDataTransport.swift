@@ -17,6 +17,8 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
         
         //Connect
         self.websocket.connect()
+
+        self.websocket.write(string: "Hi Server!")
     }
     
     public func write(_ data: Data) {
@@ -32,9 +34,9 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
     }
 
     public func websocketDidConnect(socket: WebSocketClient) {
-        
+        print("Connected to LSP Socket!")
     }
-    
+
     public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         
     }
