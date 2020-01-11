@@ -106,7 +106,7 @@ extension JSONRPCLanguageServer: LanguageServer {
         }
     }
     
-    public func initialized(params: InitializedParams, block: @escaping (LanguageServerError?) -> Void) {
+    public func initialized(params: InitializeParams, block: @escaping (LanguageServerError?) -> Void) {
         let method = ProtocolMethod.Initialized
         
         protocolTransport.sendNotification(params, method: method) { (error) in
