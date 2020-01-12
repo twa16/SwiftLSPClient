@@ -9,8 +9,8 @@ import Starscream
 public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
 
     private let websocket: WebSocket
-
     private var dataHandler: WebSocketDataTransport.ReadHandler?
+    private var isConnected = false
     
     public init(socketURL: URL) {
         //Setup our socket
@@ -19,7 +19,6 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
         
         //Connect
         self.websocket.connect()
-
     }
     
     public func write(_ data: Data) {
@@ -36,11 +35,11 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
 
     public func websocketDidConnect(socket: WebSocketClient) {
         print("Connected to LSP Socket!")
-        self.websocket.write(string: "Hi Server!")
+        self.isConnected = true
     }
 
     public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
-        
+        self.isConnected = false
     }
     
     public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
