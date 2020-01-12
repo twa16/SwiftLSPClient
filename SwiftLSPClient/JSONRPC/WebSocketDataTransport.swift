@@ -10,6 +10,8 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
 
     private let websocket: WebSocket
 
+    private var dataHandler: WebSocketDataTransport.ReadHandler?
+    
     public init(socketURL: URL) {
         //Setup our socket
         self.websocket = WebSocket(url: socketURL)
@@ -25,6 +27,7 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
     }
 
     public func setReaderHandler(_ handler: @escaping WebSocketDataTransport.ReadHandler) {
+        self.dataHandler = handler
     }
 
     public func close() {
@@ -45,7 +48,7 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
     }
     
     public func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
-        
+        self.dataHandler?(data)
     }
     
 }
