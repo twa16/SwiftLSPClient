@@ -16,12 +16,12 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
         //Setup our socket
         self.websocket = WebSocket(url: socketURL)
         self.websocket.delegate = self
-        
-        //Connect
-        self.websocket.connect()
-        while (!isConnected) {}
     }
-    
+
+    public func connect() {
+        self.websocket.connect()
+    }
+
     public func write(_ data: Data) {
         print("Writing ", data, " WS State: ", self.isConnected)
         self.websocket.write(data: data)
