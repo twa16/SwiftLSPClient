@@ -7,9 +7,11 @@ import Foundation
 import Starscream
 
 public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
+    public typealias ConnectionCallback = (Bool) -> Void
 
     private let websocket: WebSocket
     private var dataHandler: WebSocketDataTransport.ReadHandler?
+    private var connectionCallback: ConnectionCallback?
     private var isConnected = false
     
     public init(socketURL: URL) {
@@ -18,9 +20,12 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
         self.websocket.delegate = self
     }
 
+    public func registerConnectionCallback(callback: @escaping ConnectionCallback) {
+        self.connectionCallback = callback
+    }
+
     public func connect() {
         self.websocket.connect()
-        while(!isConnected) {}
     }
 
     public func write(_ data: Data) {
@@ -39,10 +44,12 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
     public func websocketDidConnect(socket: WebSocketClient) {
         print("Connected to LSP Socket!")
         self.isConnected = true
+        self.connectionCallback!(true)
     }
 
     public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         self.isConnected = false
+        self.connectionCallback!(false)
     }
     
     public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
