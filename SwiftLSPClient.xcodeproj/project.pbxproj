@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,11 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		EBAD695C2380778E00FDEE7C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; platformFilter = ios; };
-		EBAD695D2380778E00FDEE7C /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		OBJ_100 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* SSLSecurity.swift */; };
-		OBJ_101 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* WebSocket.swift */; };
-		OBJ_108 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* Package.swift */; };
 		OBJ_114 /* DataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DataTransport.swift */; };
 		OBJ_115 /* JSONRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* JSONRPC.swift */; };
 		OBJ_116 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* JSONValue.swift */; };
@@ -79,32 +74,15 @@
 		OBJ_183 /* SwiftLSPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* SwiftLSPClientTests.swift */; };
 		OBJ_184 /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* TypeTests.swift */; };
 		OBJ_186 /* SwiftLSPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftLSPClient::SwiftLSPClient::Product" /* SwiftLSPClient.framework */; };
-		OBJ_187 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
-		OBJ_98 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Compression.swift */; };
-		OBJ_99 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* SSLClientCertificate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EBAD694F237F984700FDEE7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Starscream::Starscream";
-			remoteInfo = Starscream;
-		};
 		EBAD6950237F984700FDEE7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftLSPClient::SwiftLSPClient";
 			remoteInfo = SwiftLSPClient;
-		};
-		EBAD6951237F984700FDEE7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Starscream::Starscream";
-			remoteInfo = Starscream;
 		};
 		EBAD69552380732900FDEE7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -114,20 +92,6 @@
 			remoteInfo = SwiftLSPClientTests;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		EBAD695E2380778E00FDEE7C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EBAD695D2380778E00FDEE7C /* Starscream.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		OBJ_10 /* SwiftLSPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLSPClient.h; sourceTree = "<group>"; };
@@ -199,24 +163,15 @@
 		OBJ_90 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_91 /* SwiftLSPClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftLSPClient.podspec; sourceTree = "<group>"; };
 		OBJ_92 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		"Starscream::Starscream::Product" /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftLSPClient::SwiftLSPClient::Product" /* SwiftLSPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftLSPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftLSPClient::SwiftLSPClientTests::Product" /* SwiftLSPClientTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftLSPClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_102 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_158 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				EBAD695C2380778E00FDEE7C /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +180,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_186 /* SwiftLSPClient.framework in Frameworks */,
-				OBJ_187 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +378,6 @@
 		OBJ_81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"Starscream::Starscream::Product" /* Starscream.framework */,
 				"SwiftLSPClient::SwiftLSPClientTests::Product" /* SwiftLSPClientTests.xctest */,
 				"SwiftLSPClient::SwiftLSPClient::Product" /* SwiftLSPClient.framework */,
 			);
@@ -434,48 +387,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"Starscream::Starscream" /* Starscream */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "Starscream" */;
-			buildPhases = (
-				OBJ_97 /* Sources */,
-				OBJ_102 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Starscream;
-			productName = Starscream;
-			productReference = "Starscream::Starscream::Product" /* Starscream.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Starscream::SwiftPMPackageDescription" /* StarscreamPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_104 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */;
-			buildPhases = (
-				OBJ_107 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = StarscreamPackageDescription;
-			productName = StarscreamPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 		"SwiftLSPClient::SwiftLSPClient" /* SwiftLSPClient */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_110 /* Build configuration list for PBXNativeTarget "SwiftLSPClient" */;
 			buildPhases = (
 				OBJ_113 /* Sources */,
 				OBJ_158 /* Frameworks */,
-				EBAD695E2380778E00FDEE7C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_160 /* PBXTargetDependency */,
 			);
 			name = SwiftLSPClient;
 			productName = SwiftLSPClient;
@@ -493,7 +414,6 @@
 			);
 			dependencies = (
 				OBJ_188 /* PBXTargetDependency */,
-				OBJ_189 /* PBXTargetDependency */,
 			);
 			name = SwiftLSPClientTests;
 			productName = SwiftLSPClientTests;
@@ -535,8 +455,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"Starscream::Starscream" /* Starscream */,
-				"Starscream::SwiftPMPackageDescription" /* StarscreamPackageDescription */,
 				"SwiftLSPClient::SwiftLSPClient" /* SwiftLSPClient */,
 				"SwiftLSPClient::SwiftPMPackageDescription" /* SwiftLSPClientPackageDescription */,
 				"SwiftLSPClient::SwiftLSPClientPackageTests::ProductTarget" /* SwiftLSPClientPackageTests */,
@@ -546,14 +464,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_107 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_108 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -627,26 +537,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_98 /* Compression.swift in Sources */,
-				OBJ_99 /* SSLClientCertificate.swift in Sources */,
-				OBJ_100 /* SSLSecurity.swift in Sources */,
-				OBJ_101 /* WebSocket.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_160 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = "Starscream::Starscream" /* Starscream */;
-			targetProxy = EBAD694F237F984700FDEE7C /* PBXContainerItemProxy */;
-		};
 		OBJ_171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftLSPClient::SwiftLSPClientTests" /* SwiftLSPClientTests */;
@@ -657,32 +550,9 @@
 			target = "SwiftLSPClient::SwiftLSPClient" /* SwiftLSPClient */;
 			targetProxy = EBAD6950237F984700FDEE7C /* PBXContainerItemProxy */;
 		};
-		OBJ_189 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Starscream::Starscream" /* Starscream */;
-			targetProxy = EBAD6951237F984700FDEE7C /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_105 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		OBJ_106 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 		OBJ_111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -697,10 +567,7 @@
 				);
 				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/SwiftLSPClient_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -737,10 +604,7 @@
 				);
 				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/SwiftLSPClient_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -808,11 +672,7 @@
 				);
 				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/SwiftLSPClientTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@loader_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -843,11 +703,7 @@
 				);
 				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/SwiftLSPClientTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@loader_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -909,96 +765,14 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-		OBJ_95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/swift-nio-zlib-support",
-				);
-				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/Starscream_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-lz",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = Starscream;
-			};
-			name = Debug;
-		};
-		OBJ_96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/swift-nio-zlib-support",
-				);
-				INFOPLIST_FILE = SwiftLSPClient.xcodeproj/Starscream_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-lz",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = Starscream;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_104 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_105 /* Debug */,
-				OBJ_106 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		OBJ_110 /* Build configuration list for PBXNativeTarget "SwiftLSPClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1040,15 +814,6 @@
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
 				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_94 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_95 /* Debug */,
-				OBJ_96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
