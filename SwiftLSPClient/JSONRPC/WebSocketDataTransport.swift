@@ -22,6 +22,7 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
     }
     
     public func write(_ data: Data) {
+        print("Writing ", data)
         self.websocket.write(data: data)
     }
 
