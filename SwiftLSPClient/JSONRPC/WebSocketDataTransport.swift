@@ -26,7 +26,7 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
     }
 
     public func setReaderHandler(_ handler: @escaping WebSocketDataTransport.ReadHandler) {
-        self.websocket.onData = handler
+        self.websocket.onEvent
     }
 
     public func close() {
@@ -46,6 +46,10 @@ public class WebSocketDataTransport: DataTransport, WebSocketDelegate {
     }
     
     public func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
+        
+    }
+    
+    public func didReceive(event: WebSocketEvent, client: WebSocket) {
         
     }
     
