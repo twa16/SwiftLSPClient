@@ -23,13 +23,13 @@
 /* Begin PBXBuildFile section */
 		EB6138F823CAAE8200C158B4 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6138F723CAAE8200C158B4 /* Starscream.framework */; platformFilter = ios; };
 		EB6138F923CAAE8200C158B4 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB6138F723CAAE8200C158B4 /* Starscream.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBFFDBD3246B9C9F00E9021C /* PocketIDEDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFFDBD2246B9C9F00E9021C /* PocketIDEDataTransport.swift */; };
 		OBJ_114 /* DataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DataTransport.swift */; };
 		OBJ_115 /* JSONRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* JSONRPC.swift */; };
 		OBJ_116 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* JSONValue.swift */; };
 		OBJ_117 /* MessageTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MessageTransport.swift */; };
 		OBJ_118 /* ProtocolTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ProtocolTransport.swift */; };
 		OBJ_119 /* StdioDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* StdioDataTransport.swift */; };
-		OBJ_120 /* WebSocketDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* WebSocketDataTransport.swift */; };
 		OBJ_121 /* JSONRPCLanguageServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* JSONRPCLanguageServer.swift */; };
 		OBJ_122 /* LanguageServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* LanguageServer.swift */; };
 		OBJ_124 /* PocketIDEServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* PocketIDEServerRequest.swift */; };
@@ -111,6 +111,7 @@
 
 /* Begin PBXFileReference section */
 		EB6138F723CAAE8200C158B4 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		EBFFDBD2246B9C9F00E9021C /* PocketIDEDataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketIDEDataTransport.swift; sourceTree = "<group>"; };
 		OBJ_10 /* SwiftLSPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLSPClient.h; sourceTree = "<group>"; };
 		OBJ_11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_13 /* DataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransport.swift; sourceTree = "<group>"; };
@@ -119,7 +120,6 @@
 		OBJ_16 /* MessageTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTransport.swift; sourceTree = "<group>"; };
 		OBJ_17 /* ProtocolTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolTransport.swift; sourceTree = "<group>"; };
 		OBJ_18 /* StdioDataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StdioDataTransport.swift; sourceTree = "<group>"; };
-		OBJ_19 /* WebSocketDataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketDataTransport.swift; sourceTree = "<group>"; };
 		OBJ_20 /* JSONRPCLanguageServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRPCLanguageServer.swift; sourceTree = "<group>"; };
 		OBJ_21 /* LanguageServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageServer.swift; sourceTree = "<group>"; };
 		OBJ_24 /* PocketIDEServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketIDEServerRequest.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				OBJ_16 /* MessageTransport.swift */,
 				OBJ_17 /* ProtocolTransport.swift */,
 				OBJ_18 /* StdioDataTransport.swift */,
-				OBJ_19 /* WebSocketDataTransport.swift */,
+				EBFFDBD2246B9C9F00E9021C /* PocketIDEDataTransport.swift */,
 			);
 			path = JSONRPC;
 			sourceTree = "<group>";
@@ -494,7 +494,7 @@
 				OBJ_117 /* MessageTransport.swift in Sources */,
 				OBJ_118 /* ProtocolTransport.swift in Sources */,
 				OBJ_119 /* StdioDataTransport.swift in Sources */,
-				OBJ_120 /* WebSocketDataTransport.swift in Sources */,
+				EBFFDBD3246B9C9F00E9021C /* PocketIDEDataTransport.swift in Sources */,
 				OBJ_121 /* JSONRPCLanguageServer.swift in Sources */,
 				OBJ_122 /* LanguageServer.swift in Sources */,
 				OBJ_124 /* PocketIDEServerRequest.swift in Sources */,
