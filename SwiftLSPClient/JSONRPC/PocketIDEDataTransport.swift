@@ -40,8 +40,7 @@ public class PocketIDEDataTransport: DataTransport, WebSocketDelegate {
             isConnected = false
             print("websocket is disconnected: \(reason) with code: \(code)")
         case .text(let string):
-            //print("Received text: \(string)")
-            print("Received unknown text")
+            print("Received text: \(string)")
         case .binary(let data):
             self.dataHandler!(data)
         case .ping(_):
