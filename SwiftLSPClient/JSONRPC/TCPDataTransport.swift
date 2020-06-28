@@ -23,6 +23,8 @@ public class TCPDataTransport: DataTransport {
         self.shouldRun = true
         
         self.socket = TCPClient(address: host, port: port)
+        self.socket.connect(timeout: 5)
+        
         
         DispatchQueue.global(qos: .background).async {
             self.checkForData()
