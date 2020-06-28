@@ -45,7 +45,8 @@ public class TCPDataTransport: DataTransport {
             if bytesAvailable != nil && bytesAvailable != 0 {
                 let bytes = self.socket.read(Int(bytesAvailable!))
                 if bytes != nil {
-                    self.readHandler!(Data(bytes!))
+                    let dataHolder = Data(bytes!)
+                    self.readHandler!(dataHolder)
                 }
             }
         }
