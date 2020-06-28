@@ -29,11 +29,11 @@ public class TCPDataTransport: DataTransport {
         }
     }
     
-    func write(_ data: Data) {
+    public func write(_ data: Data) {
         socket.send(data: data)
     }
     
-    func setReaderHandler(_ handler: @escaping ReadHandler) {
+    public func setReaderHandler(_ handler: @escaping ReadHandler) {
         self.readHandler = handler
     }
 
@@ -49,7 +49,7 @@ public class TCPDataTransport: DataTransport {
         }
     }
     
-    func close() {
+    public func close() {
         self.shouldRun = false
         self.socket.close()
     }
