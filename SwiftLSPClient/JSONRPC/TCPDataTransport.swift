@@ -8,7 +8,7 @@
 import Foundation
 import SwiftSocket
 
-class TCPDataTransport: DataTransport {
+public class TCPDataTransport: DataTransport {
     private var host: String
     private var port: Int32
     private var socket: TCPClient

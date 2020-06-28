@@ -24,6 +24,8 @@
 		EB6138F823CAAE8200C158B4 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6138F723CAAE8200C158B4 /* Starscream.framework */; platformFilter = ios; };
 		EB6138F923CAAE8200C158B4 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB6138F723CAAE8200C158B4 /* Starscream.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBAA57F024A82C5F00AE5300 /* TCPDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA57EF24A82C5F00AE5300 /* TCPDataTransport.swift */; };
+		EBAA57F224A8363000AE5300 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA57F124A8363000AE5300 /* SwiftSocket.framework */; };
+		EBAA57F324A8363000AE5300 /* SwiftSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA57F124A8363000AE5300 /* SwiftSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBFFDBD3246B9C9F00E9021C /* PocketIDEDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFFDBD2246B9C9F00E9021C /* PocketIDEDataTransport.swift */; };
 		OBJ_114 /* DataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DataTransport.swift */; };
 		OBJ_115 /* JSONRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* JSONRPC.swift */; };
@@ -104,6 +106,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EB6138F923CAAE8200C158B4 /* Starscream.framework in Embed Frameworks */,
+				EBAA57F324A8363000AE5300 /* SwiftSocket.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +116,7 @@
 /* Begin PBXFileReference section */
 		EB6138F723CAAE8200C158B4 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		EBAA57EF24A82C5F00AE5300 /* TCPDataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPDataTransport.swift; sourceTree = "<group>"; };
+		EBAA57F124A8363000AE5300 /* SwiftSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSocket.framework; path = Carthage/Build/iOS/SwiftSocket.framework; sourceTree = "<group>"; };
 		EBFFDBD2246B9C9F00E9021C /* PocketIDEDataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketIDEDataTransport.swift; sourceTree = "<group>"; };
 		OBJ_10 /* SwiftLSPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLSPClient.h; sourceTree = "<group>"; };
 		OBJ_11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			buildActionMask = 0;
 			files = (
 				EB6138F823CAAE8200C158B4 /* Starscream.framework in Frameworks */,
+				EBAA57F224A8363000AE5300 /* SwiftSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +214,7 @@
 		EB2ABB622381A21E00EE1663 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBAA57F124A8363000AE5300 /* SwiftSocket.framework */,
 				EB6138F723CAAE8200C158B4 /* Starscream.framework */,
 			);
 			name = Frameworks;
