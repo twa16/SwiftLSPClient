@@ -10,9 +10,9 @@ import SwiftSocket
 
 class TCPDataTransport: DataTransport {
     private var host: String
-    private var port: Int
+    private var port: Int32
     private var socket: TCPClient
-    private var readHandler: ReadHandler
+    private var readHandler: ReadHandler?
     
     private var shouldRun: Bool
     
@@ -43,7 +43,7 @@ class TCPDataTransport: DataTransport {
             if bytesAvailable != nil && bytesAvailable != 0 {
                 let bytes = self.socket.read(Int(bytesAvailable!))
                 if bytes != nil {
-                    self.readHandler(Data(bytes!))
+                    self.readHandler!(Data(bytes!))
                 }
             }
         }
